@@ -1,0 +1,32 @@
+<!-- <form> -->
+  <!-- <div class="container">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label" [(ngModel)]="username" name="username">User Name</label>
+    <div class=" col-sm-3">
+      <input type="text" class="form-control" id="staticEmail">
+  </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label" password="{{password}">Password</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+  <button (click)=handleLogin() class="btn btn-success">Login</button>
+</div> -->
+<!-- </form> -->
+<div class="container">
+  <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+
+  <div>
+    User Name : <input type="text" name="username" [(ngModel)]="username">
+    Password  : <input type="password" name="password" [(ngModel)]="password">
+
+    <!-- User Name : {{username}} -->
+
+    <!-- <button (click)=handleLogin() class="btn btn-success">Login</button> -->
+    <!-- <button (click)=handleBasicAuthLogin() class="btn btn-success">Login</button> -->
+    <button (click)=myHandleLogin() class="btn btn-success">Login</button>
+    
+  </div>
+</div>
