@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   // handleLogin(){
-    //test From Browser
+    //test From Browser From BRowser
   //   console.log(this.username)
   //   if(this.username=="Amani" && this.password=="reddy"){
   //     this.invalidLogin = false
